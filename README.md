@@ -1,5 +1,5 @@
-# SAP openUI5
-Portifolio de Soluções SAP openUI5
+# SAP openUI5 - Soluções
+Fontes e referências
 
 [SAP openUI5](http://openui5.org/)
 
