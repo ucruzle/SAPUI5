@@ -1,12 +1,10 @@
 # SAPUI5 - Soluções
 Fontes e referências
 
-[SAP openUI5](http://openui5.org/)
+[SAPUI5](https://sapui5.hana.ondemand.com/)
 
-[SAPUI5](http://www.sapui5.org/sapui5blogs/)
+[openUI5](https://openui5.hana.ondemand.com/)
 
-[openUI5 SDK](https://openui5.hana.ondemand.com/#docs/guide/95d113be50ae40d5b0b562b84d715227.html/)
+[SAP Cloud Platform](https://cloudplatform.sap.com/index.html)
 
-[SAP Development Tools](https://tools.hana.ondemand.com/#sapui5/)
-
-[YouTube Channel](https://www.youtube.com/user/openui5videos/feed/)
+[SAP Cloud Platform Cockpit](https://account.hanatrial.ondemand.com/#/home/welcome)
