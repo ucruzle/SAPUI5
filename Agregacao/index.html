@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Agregação</title>
+
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"leonardo.cruzHello": "./"}'>
+		</script>
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				
+				// debugger;
+				
+				var oItemCotacao = 
+					new sap.ui.core.Item({
+						key: '1',
+						text: 'cotação'
+					});
+				
+				var oInput = new sap.m.Input({
+					
+					maxLength: 5,
+					type: sap.m.InputType.Text,
+					showValueHelp: true,
+					showSuggestion: true,
+					suggestionItems: [
+						// new sap.ui.core.Item({
+						// 	key: '1',
+						// 	text: 'cotação'
+						// }), // Fim do sap.ui.core.Item - cotação
+						oItemCotacao,
+						new sap.ui.core.Item({
+							key: '1',
+							text: 'venda'
+						}) // Fim do sap.ui.core.Item - venda
+						
+					] // Fim do array suggestionItems
+					
+				}); // Fim do oInput
+				
+				oInput.placeAt("content"); // Coloca o componente Input na tela
+				
+				var oComboBox = new sap.m.ComboBox({
+					
+					placeholder: 'Tipo de documento',
+					items: [
+						
+						new sap.ui.core.Item({
+							key: '1',
+							text: 'cotação'
+						}), // Fim do sap.ui.core.Item - cotação
+						
+						new sap.ui.core.Item({
+							key: '2',
+							text: 'venda'
+						}), // Fim do sap.ui.core.Item - venda
+						
+					] // Fim do array items
+					
+				}); // Fim do oComboBox
+				
+				oComboBox.placeAt("content"); // Coloca o componente ComboBox na tela
+				
+				var oList = new sap.m.List();
+				
+				var aClientes = ["Coca-Cola", "Pepsico", "Dolly"];
+				
+				for (var i = 0; i < aClientes.length; i++) {
+					
+					oList.addItem(
+					
+						new sap.m.StandardListItem({
+							title: aClientes[i]
+						})
+						
+					); // Fim do oList
+						
+				} // Fim do for
+				
+				oList.setHeaderToolbar(
+					
+					new sap.m.Toolbar({
+						
+						content: [
+							
+							new sap.m.Title({
+								
+								text: 'clientes'
+								
+							}) // Fim do Title
+							
+						] // Fim do array content
+						
+					}) // Fim do Toolbar
+					
+				); // Fim do setHeaderToolbar
+				
+				oList.placeAt("content"); // Coloca o componente List na tela 
+				
+			}); // Fim da function attachInit
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>
