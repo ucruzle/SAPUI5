@@ -1,0 +1,29 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="nytArticles.controller.S1">
+	
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<List items="{/response/docs}" headerText="Documentos">
+						<headerToolbar>
+							<Toolbar>
+								<SearchField search="onSearch"/>
+							</Toolbar>
+						</headerToolbar>
+						<items>
+							<ObjectListItem title="{headline/main}" type="Active">
+								<attributes>
+									<ObjectAttribute text="{ path: 'pub_date', formatter: '.formatDate' } ({ path: 'pub_date', formatter: '.formatDaysAgo' } days ago)" />
+									<ObjectAttribute text="{document_type}"/>
+									<ObjectAttribute text="{news_desk}"/>
+									<ObjectAttribute text="{section_name}"/>
+									<ObjectAttribute text="{subsection_name}"/>
+								</attributes>
+							</ObjectListItem>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

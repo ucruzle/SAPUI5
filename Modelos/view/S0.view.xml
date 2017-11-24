@@ -1,0 +1,38 @@
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	controllerName="modelo.demo.controller.S0"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<!-- ComboBox -->
+					<ComboBox id="comboBox_clientes" placeholder="Tipo de documentos" items="{/clientes}">
+						<items>
+							<core:Item key="Id" text="{Nome}"/>
+						</items>
+					</ComboBox>
+					
+					<!-- List -->
+					<!--<List id="lista_clientes" items="{/clientes}">-->
+					<!--	<items>-->
+					<!--		<StandardListItem title="{Id} - {Nome}"/>-->
+					<!--	</items>-->
+					<!--</List>-->
+					
+					<List id="lista_clientes">
+					</List>
+					
+					<!-- Input -->
+					<!--<Input id="input_cliente" value="{/clientes/2/Nome}" />-->
+					
+					<Input id="input_cliente" />
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

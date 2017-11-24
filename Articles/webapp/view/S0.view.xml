@@ -1,0 +1,26 @@
+<mvc:View 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	controllerName="nytArticles.controller.S0" 
+	displayBlock="true">
+	
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<List items="{/response/docs}">
+						<headerToolbar>
+							<Toolbar>
+								<SearchField search="onSearch" />
+							</Toolbar>
+						</headerToolbar>
+						<items>
+							<StandardListItem title="{headline/main}"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
