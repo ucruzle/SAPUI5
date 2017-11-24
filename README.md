@@ -1,4 +1,4 @@
-# SAP openUI5 - Soluções
+# SAPUI5 - Soluções
 Fontes e referências
 
 [SAP openUI5](http://openui5.org/)
